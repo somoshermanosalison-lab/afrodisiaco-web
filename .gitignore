@@ -1,0 +1,21 @@
+# Material original de trabajo: NO se sube.
+# Son los archivos pesados de los que salen las versiones optimizadas.
+# Se quedan en tu computadora; si los necesitas, vuelves a correr los scripts.
+videos-originales/
+fotos-originales/
+
+# Herramientas y notas de trabajo, no forman parte del sitio publicado
+agency-agents/
+graphify-out/
+ui-ux-pro-max-skill/
+design-system/
+
+# Sistema operativo / editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
