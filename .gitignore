@@ -19,3 +19,10 @@ desktop.ini
 
 # Vercel
 .vercel/
+
+# Configurador: dependencias, compilados y secretos
+node_modules/
+dist/
+.env
+.env.local
+*.tsbuildinfo

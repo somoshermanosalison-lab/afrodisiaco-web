@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+/* Misma paleta y tipografías que el sitio de Afrodísiaco. */
+@theme {
+  --color-noir: #0c0a0d;
+  --color-noir-2: #141016;
+  --color-noir-3: #1a141b;
+  --color-oxblood: #7a1226;
+  --color-ember: #c4324c;
+  --color-champan: #c6a15b;
+  --color-humo: #ede6dd;
+  --color-ceniza: #8c8790;
+  --color-line: rgb(237 230 221 / 0.12);
+  --color-wa: #25d366;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Playfair Display', serif;
+  --font-impact: 'Anton', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-noir);
+  color: var(--color-humo);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-champan);
+  outline-offset: 2px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
