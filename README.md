@@ -79,7 +79,7 @@ El sitio de siempre (`index.html`) no cambia: el configurador vive aparte en
 | `frontend/` | La app del configurador (React + Vite + TypeScript + Tailwind + Three.js) |
 | `frontend/public/models/` | Modelos 3D `.glb` exportados de Blender |
 | `backend/` | API (Node + Express): catálogo, cotizaciones y contacto |
-| `api/` | Entrada para publicar la API como función de Vercel |
+| `api/index.js` | La API empaquetada para Vercel. Se genera con `npm run build:api`; no se edita a mano |
 | `database/` | Esquema de PostgreSQL |
 | `scripts/assemble-site.mjs` | Junta el sitio actual y el configurador en `dist/` |
 

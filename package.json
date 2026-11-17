@@ -12,7 +12,8 @@
     "dev": "concurrently -n web,api -c magenta,cyan \"npm run dev -w frontend\" \"npm run dev -w backend\"",
     "dev:web": "npm run dev -w frontend",
     "dev:api": "npm run dev -w backend",
-    "build": "npm run build -w frontend && node scripts/assemble-site.mjs",
+    "build": "npm run build:api && npm run build -w frontend && node scripts/assemble-site.mjs",
+    "build:api": "node scripts/build-api.mjs",
     "lint": "eslint .",
     "typecheck": "npm run typecheck -w shared && npm run typecheck -w frontend && npm run typecheck -w backend",
     "test": "npm run test -w shared",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "concurrently": "^10.0.7",
+    "esbuild": "^0.28.2",
     "eslint": "^10.15.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "globals": "^17.14.0",
