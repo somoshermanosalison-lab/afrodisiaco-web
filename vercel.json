@@ -6,7 +6,7 @@
   "trailingSlash": false,
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },
-    { "source": "/configurador/(.*)", "destination": "/configurador/index.html" }
+    { "source": "/configurador/(.*)", "destination": "/configurador" }
   ],
   "headers": [
     {
